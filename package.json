@@ -1,0 +1,13 @@
+{
+  "name": "portfolio-software",
+  "version": "0.1.0",
+  "homepage": "https://IsaVII.github.io/portfolio-software",
+  "private": true,
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
