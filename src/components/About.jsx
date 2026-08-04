@@ -16,18 +16,18 @@ export default function About() {
               Hi, I'm <b>Isa</b>,
             </p>
             <p className="tab">
-              a <i>Software</i> and
-              <br />
-              <i> Games Developer</i>
+              a Software Developer with a background in game systems
+              programming.
             </p>
             <br />
             <p className="section-content">
-              Currently, I am transitioning from a background in{" "}
-              <b>game development</b> to a focus on <b>web development</b>.
-              <br />
-              <br />I have a strong passion for learning and am eager to expand
-              my skill set, while still maintaining my love for game development
-              in my free time.
+              I've spent 8+ years developing games and game systems - as a solo
+              developer and as a programmer/technical designer on production
+              teams, including leading programming on a multiplayer co-op title.
+              Now I'm applying that same problem-solving and systems thinking to
+              web development. Recently, I built an inventory management system
+              for a local store, replacing a manual paper process with a tool
+              that auto-parses supplier PDFs into structured data.
             </p>
 
             <div className="experience-wrapper">
