@@ -87,7 +87,7 @@ export default function Navbar() {
             className={activeSection === "fullstack" ? "nav-active" : ""}
             onClick={handleLinkClick}
           >
-            Full-stack
+            Web Projects
           </a>
         </li>
         <li>

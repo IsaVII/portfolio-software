@@ -1,9 +1,6 @@
-import { icons } from "../assets/icons.jsx";
 import projects from "../assets/projects/fullstack.json";
 import ProjectCard from "../assets/projects/ProjectCard.jsx";
 import "../css/projects.css";
-
-const Icon = ({ name }) => icons[name] ?? null;
 
 export default function Fullstack() {
   return (

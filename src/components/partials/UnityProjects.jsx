@@ -3,11 +3,11 @@ import { useState } from "react";
 const BASE = import.meta.env.BASE_URL;
 
 const unityImages = [
-  "images/projects/Unity/IdleHorrorStory.jpg",
-  "images/projects/Unity/MH_DecoMode.png",
-  "images/projects/Unity/Neverrift_Image_1.png",
-  "images/projects/Unity/Bubbles.png",
-  "images/projects/Unity/Unicorn.png",
+  "images/projects/Unity/IdleHorrorStory.webp",
+  "images/projects/Unity/MH_DecoMode.webp",
+  "images/projects/Unity/Neverrift_Image_1.webp",
+  "images/projects/Unity/Bubbles.webp",
+  "images/projects/Unity/Unicorn.webp",
 ];
 
 export default function UnityProjects() {
