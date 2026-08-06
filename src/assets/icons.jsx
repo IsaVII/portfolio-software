@@ -27,6 +27,7 @@ import ClockCustomIcon from "./customIcons/icon_clock.jsx";
 import GameControllerCustomIcon from "./customIcons/icon_gameController.jsx";
 
 import { Steam } from "@thesvg/react";
+import { Github } from "@thesvg/react";
 
 function ToolIcon({ Icon }) {
   return <Icon className="tool-icon" />;
@@ -62,4 +63,5 @@ export const icons = {
   GameController: <ToolIcon Icon={GameControllerCustomIcon} />,
 
   Steam: <ToolIcon Icon={Steam} />,
+  Github: <ToolIcon Icon={Github} />,
 };
