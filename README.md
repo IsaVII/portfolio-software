@@ -1,4 +1,4 @@
-# Isa Hellström — Portfolio
+# Isa Hellström - Portfolio
 
 My personal portfolio site, built to show my move from game development into web development.
 
