@@ -23,7 +23,11 @@
     "name": "WebDev Learning Playground",
     "date": "2026/08",
     "url": "https://IsaVII.github.io/WebDev-Playground",
-    "imageUrl": ["images/projects/WebDevPlayground/WebDevPlayground_Title.webp"],
+    "imageUrl": ["images/projects/WebDevPlayground/WebDev-01.webp",
+    "images/projects/WebDevPlayground/WebDev-02.webp",
+    "images/projects/WebDevPlayground/WebDev-03.webp",
+    "images/projects/WebDevPlayground/WebDev-04.webp"
+  ],
     "tags": ["HTML", "CSS", "JS", "React", "Redux", "TailwindCSS", "Vite"],
     "description": "A frontend-only, interactive learning platform for mastering full-stack web development concepts through structured lessons, live demos, and progress tracking; covering JavaScript, TypeScript, Git, HTTP & APIs, Node.js, React, Redux, and Testing.",
     "bulletPoints": [
