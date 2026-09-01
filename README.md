@@ -8,6 +8,12 @@ My personal portfolio site, built to show my move from game development into web
 
 I wanted a portfolio that actually shows how I work, not just a static list of projects. So instead of hardcoding everything, project data lives in JSON files and gets rendered dynamically. I also built a small game from scratch and embedded it on the page, partly as a nod to my background, partly just because it was fun to build.
 
+## Screenshots
+
+| -------------------------------------------- | -------------------------------------------- |
+| ![Screenshot 1](./screenshots/screenshot-01.webp) | ![Screenshot 2](./screenshots/screenshot-02.webp) |
+| -------------------------------------------- | -------------------------------------------- |
+
 ## Features
 
 - Single-page layout with scroll-spy navigation (Intersection Observer API highlights the section you're currently viewing)
@@ -22,10 +28,6 @@ I wanted a portfolio that actually shows how I work, not just a static list of p
 - Vite
 - Tailwind CSS
 - Vanilla JavaScript (for the game)
-
-## Screenshots
-
-| ![Screenshot 1](./screenshots/screenshot-01.webp) | ![Screenshot 2](./screenshots/screenshot-02.webp) |
 
 ## Running it locally
 
