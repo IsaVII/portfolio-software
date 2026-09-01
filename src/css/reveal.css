@@ -1,11 +1,11 @@
 :root {
     --duration-base: 280ms;
     /* used for the reduced-motion opacity fallback */
-    --duration-moderate: 420ms;
+    --duration-moderate: 720ms;
     /* reveal + text-reveal transition length */
     --ease-emerge: cubic-bezier(0.16, 1, 0.3, 1);
     /* fast start, soft landing */
-    --reveal-distance: 24px;
+    --reveal-distance: 50px;
     /* how far content travels in from */
 }
 
@@ -83,5 +83,23 @@
 
     .text-reveal-piece {
         transform: none;
+    }
+}
+
+/* ---- Reveal variant: fading ---- */
+.reveal-fade {
+    opacity: 0.3;
+    transition: opacity var(--duration-moderate) var(--ease-emerge);
+    will-change: opacity;
+}
+
+.reveal-fade.is-visible {
+    opacity: 1;
+    will-change: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal-fade {
+        transition: opacity var(--duration-base) linear;
     }
 }

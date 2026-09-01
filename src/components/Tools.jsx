@@ -9,7 +9,7 @@ export default function Tools() {
     <>
       <section id="tools" className="section">
         <TextReveal as="h2" text="Tools" className="section-title" />
-        <Reveal key="tools">
+        <Reveal key="tools" variant="fade">
           <div className="tools-list">
             <span className="tool-item-pair">
               <Icon name="Csharp" />

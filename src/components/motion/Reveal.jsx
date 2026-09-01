@@ -4,11 +4,25 @@ function Reveal({
   children,
   as: Tag = "div",
   direction = "up",
+  variant = "default",
   index = 0,
   className = "",
   ...rest
 }) {
   const { ref, isVisible } = useScrollReveal();
+
+  if (variant === "fade") {
+    return (
+      <Tag
+        ref={ref}
+        className={`reveal-fade ${isVisible ? "is-visible" : ""} ${className}`}
+        style={{ "--stagger-index": index }}
+        {...rest}
+      >
+        {children}
+      </Tag>
+    );
+  }
 
   return (
     <Tag

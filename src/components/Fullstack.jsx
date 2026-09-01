@@ -11,7 +11,7 @@ export default function Fullstack() {
         <section className="section" id="fullstack">
           <TextReveal as="h2" text="Web Projects" className="section-title" />
           {projects.map((project, index) => (
-            <Reveal key={project.id}>
+            <Reveal key={project.id} variant="fade">
               <ProjectCard key={project.id} project={project} index={index} />
             </Reveal>
           ))}

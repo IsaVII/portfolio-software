@@ -14,7 +14,7 @@ export default function Games() {
       <TextReveal as="h2" text="Games Projects" className="section-title" />
 
       {projects.map((project, index) => (
-        <Reveal key={project.id}>
+        <Reveal key={project.id} variant="fade">
           <ProjectCardGames key={project.id} project={project} index={index} />
         </Reveal>
       ))}
