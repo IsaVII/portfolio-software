@@ -1,10 +1,11 @@
 import Game from "../assets/game/Game.jsx";
+import TextReveal from "./motion/TextReveal.jsx";
 
 export default function About() {
   return (
     <>
       <section id="about" className="section">
-        <h2 className="section-title">About Me</h2>
+        <TextReveal as="h2" text="About Me" className="section-title" />
 
         <div className="about-wrapper">
           <div className="container-left">

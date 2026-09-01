@@ -1,14 +1,18 @@
 import projects from "../assets/projects/fullstack.json";
 import ProjectCard from "../assets/projects/ProjectCard.jsx";
 import "../css/projects.css";
+import Reveal from "./motion/Reveal.jsx";
+import TextReveal from "./motion/TextReveal.jsx";
 
 export default function Fullstack() {
   return (
     <>
       <section className="section" id="fullstack">
-        <h2 className="section-title">Web Projects</h2>
+        <TextReveal as="h2" text="Web Projects" className="section-title" />
         {projects.map((project, index) => (
-          <ProjectCard key={project.id} project={project} index={index} />
+          <Reveal key={project.id}>
+            <ProjectCard key={project.id} project={project} index={index} />
+          </Reveal>
         ))}
       </section>
     </>

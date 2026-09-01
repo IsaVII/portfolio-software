@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import TextReveal from "../../components/motion/TextReveal.jsx";
 const TAG_COLORS = {
   HTML: { bg: "#e34c26", color: "#fff" },
   CSS: { bg: "#264de4", color: "#fff" },
@@ -35,7 +35,11 @@ function ProjectCard({ project, index }) {
   return (
     <article className={`project-card ${isReversed ? "reverse" : ""}`}>
       {/* Mobile title */}
-      <h2 className="project-title-mobile project-title">{project.name}</h2>
+      <TextReveal
+        as="h2"
+        text={project.name}
+        className="project-title-mobile project-title"
+      />
 
       {/* Images */}
       <div className="project-images">
@@ -61,9 +65,11 @@ function ProjectCard({ project, index }) {
       <div className="project-content">
         {/* Desktop title */}
         <div className="project-title-date-combination">
-          <h2 className="project-title-desktop project-title">
-            {project.name}
-          </h2>
+          <TextReveal
+            as="h2"
+            text={project.name}
+            className="project-title-desktop project-title w-full"
+          />
 
           <p className="project-date">{project.date}</p>
         </div>

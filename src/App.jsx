@@ -11,6 +11,7 @@ import { loadTwinkleUpdater } from "@tsparticles/updater-twinkle";
 import Fullstack from "./components/Fullstack.jsx";
 import Games from "./components/Games.jsx";
 import Footer from "./components/Footer.jsx";
+import "./css/reveal.css";
 
 function App() {
   useEffect(() => {

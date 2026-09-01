@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { icons } from "../icons.jsx";
+import TextReveal from "../../components/motion/TextReveal.jsx";
 
 const Icon = ({ name }) => icons[name] ?? null;
 
@@ -44,7 +45,11 @@ export default function ProjectCardGames({ project, index }) {
   return (
     <article className={`project-card ${isReversed ? "reverse" : ""}`}>
       {/* Mobile title */}
-      <h2 className="project-title-mobile project-title">{project.name}</h2>
+      <TextReveal
+        as="h2"
+        text={project.name}
+        className="project-title-mobile project-title"
+      />
 
       {/* Images */}
       <div className="project-images">
@@ -71,10 +76,13 @@ export default function ProjectCardGames({ project, index }) {
         {/* Desktop title */}
         <div className="project-title-date-combination">
           <div className="title-date-wrapper">
-            <h2 className="project-title-desktop project-title">
-              {project.name}
-            </h2>
-            <p className="project-date">{project.date}</p>
+            <TextReveal
+              as="h2"
+              text={project.name}
+              className="project-title-desktop project-title w-full"
+            />
+
+            <p className="project-date min-w-40">{project.date}</p>
           </div>
 
           {project.gameUrl && (

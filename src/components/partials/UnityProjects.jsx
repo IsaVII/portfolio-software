@@ -1,5 +1,6 @@
 import { useState } from "react";
-
+import TextReveal from "../motion/TextReveal.jsx";
+import Reveal from "../motion/Reveal.jsx";
 const BASE = import.meta.env.BASE_URL;
 
 const unityImages = [
@@ -27,24 +28,28 @@ export default function UnityProjects() {
 
   return (
     <section className="section" id="unity-projects">
-      <h2 className="project-title">Unity Projects</h2>
-      2018-2023: diverse Unity projects, both solo and in teams, including game
-      jams and prototypes.
-      <div className="carousel">
-        {<button onClick={prevImage_unity}>◀</button>}
+      <TextReveal as="h2" text="Unity Projects" className="section-title" />
+      <div>
+        <Reveal key="unity-projects">
+          2018-2023: diverse Unity projects, both solo and in teams, including
+          game jams and prototypes.
+          <div className="carousel">
+            {<button onClick={prevImage_unity}>◀</button>}
 
-        <a
-          href={`${BASE}${unityImages[currentUnityImage]}`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src={`${BASE}${unityImages[currentUnityImage]}`}
-            alt="Unity projects"
-          />
-        </a>
+            <a
+              href={`${BASE}${unityImages[currentUnityImage]}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={`${BASE}${unityImages[currentUnityImage]}`}
+                alt="Unity projects"
+              />
+            </a>
 
-        {<button onClick={nextImage_unity}>▶</button>}
+            {<button onClick={nextImage_unity}>▶</button>}
+          </div>
+        </Reveal>
       </div>
     </section>
   );
