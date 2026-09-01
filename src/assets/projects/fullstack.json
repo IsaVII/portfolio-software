@@ -79,7 +79,9 @@
     "id": 5,
     "name": "Portfolio Website",
     "date": "2026/06",
-    "imageUrl": ["images/projects/portfolio/Portfolio.webp"],
+    "imageUrl": ["images/projects/portfolio/Portfolio.webp",
+   "images/projects/portfolio/Portfolio-02.webp"
+    ],
     "tags": ["HTML", "CSS", "JS", "React", "Vite"],
  "description": "A responsive, single-page portfolio, featuring a scroll-spy navigation system, JSON-driven project data for easy content updates, and a custom JavaScript game built from scratch and embedded directly into the page.",
     "bulletPoints": [

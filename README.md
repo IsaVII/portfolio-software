@@ -23,6 +23,10 @@ I wanted a portfolio that actually shows how I work, not just a static list of p
 - Tailwind CSS
 - Vanilla JavaScript (for the game)
 
+## Screenshots
+
+| ![Screenshot 1](./screenshots/screenshot-01.webp) | ![Screenshot 2](./screenshots/screenshot-02.webp) |
+
 ## Running it locally
 
 ```bash
