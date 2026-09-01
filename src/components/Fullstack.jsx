@@ -7,14 +7,16 @@ import TextReveal from "./motion/TextReveal.jsx";
 export default function Fullstack() {
   return (
     <>
-      <section className="section" id="fullstack">
-        <TextReveal as="h2" text="Web Projects" className="section-title" />
-        {projects.map((project, index) => (
-          <Reveal key={project.id}>
-            <ProjectCard key={project.id} project={project} index={index} />
-          </Reveal>
-        ))}
-      </section>
+      <div className="pb-14">
+        <section className="section" id="fullstack">
+          <TextReveal as="h2" text="Web Projects" className="section-title" />
+          {projects.map((project, index) => (
+            <Reveal key={project.id}>
+              <ProjectCard key={project.id} project={project} index={index} />
+            </Reveal>
+          ))}
+        </section>
+      </div>
     </>
   );
 }

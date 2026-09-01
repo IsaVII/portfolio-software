@@ -1,6 +1,7 @@
 import Navbar from "./partials/Navbar.jsx";
 import Contact from "./partials/Contact.jsx";
 import CV from "./partials/CV.jsx";
+import ThemeToggle from "./partials/ThemeToggle.jsx";
 
 export default function Header() {
   return (
@@ -9,6 +10,7 @@ export default function Header() {
       <header>
         <Navbar />
       </header>
+      <ThemeToggle />
       <CV />
     </>
   );

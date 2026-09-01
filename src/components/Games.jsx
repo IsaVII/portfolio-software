@@ -10,7 +10,7 @@ const Icon = ({ name }) => icons[name] ?? null;
 
 export default function Games() {
   return (
-    <section className="section" id="games">
+    <section className="section" id="games ">
       <TextReveal as="h2" text="Games Projects" className="section-title" />
 
       {projects.map((project, index) => (

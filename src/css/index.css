@@ -35,6 +35,33 @@
   --border-panel: 30px;
 }
 
+/* ****** LIGHT MODE ******* */
+:root[data-theme="light"] {
+  --link: #2f6fb0;
+  --linkCurrent: #1d5389;
+  --linkHover: #a6ccff;
+  --text: #1a1a2e;
+  --text_highlight: #2f6fb0;
+  --text_highlight_secondary: #218a96;
+  --bg-color: #d7e5ff;
+  --bg-color-header: rgba(190, 213, 255, 0.9);
+  --bg-color-cards: rgba(229, 239, 255, 0.75);
+  --red: #c0273a;
+
+  --btnColor: #2f6fb0;
+  --btnColorHover: #4d8fd6;
+  --btn-danger-red: #c0273a;
+  --btn-danger-red-hover: #e13148;
+}
+
+:root[data-theme="light"] .nav-hamburger .bar {
+  background-color: var(--text);
+}
+
+:root[data-theme="light"] .sphere-shape {
+  color: #1a1a2e;
+}
+
 html {
   scroll-padding-top: 6rem;
   margin: 0;
@@ -49,6 +76,7 @@ body {
   justify-self: center;
   margin: 0;
   padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 button {
@@ -89,7 +117,7 @@ b {
   min-width: 60%;
   backdrop-filter: blur(12px);
   border-radius: var(--border-radius);
-  box-shadow: 0 14px 14px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 14px 14px rgba(75, 93, 143, 0.5);
 
 
 }
@@ -233,9 +261,58 @@ nav ul li a.nav-active {
 
 
 /*
-*  CV
+* Theme toggle
 */
 
+#theme-toggle {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0 0.5rem;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.theme-toggle-track {
+  width: 52px;
+  height: 28px;
+  border-radius: 999px;
+  background-color: var(--bg-color-cards);
+  border: 1px solid rgba(166, 204, 255, 0.35);
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.theme-toggle-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--btnColor);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(0);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+:root[data-theme="light"] .theme-toggle-thumb {
+  transform: translateX(24px);
+  background-color: #f0e98d;
+  color: #1a1a2e;
+}
+
+.theme-toggle-thumb svg {
+  width: 14px;
+  height: 14px;
+}
+
+#theme-toggle:hover .theme-toggle-track {
+  border-color: var(--link);
+}
 
 /*
 *  CV
@@ -405,6 +482,24 @@ nav ul li a.nav-active {
 
   #cv-button-text {
     font-size: 0.85rem;
+  }
+
+  #theme-toggle {
+    margin: 0 0.25rem;
+  }
+
+  .theme-toggle-track {
+    width: 44px;
+    height: 24px;
+  }
+
+  .theme-toggle-thumb {
+    width: 17px;
+    height: 17px;
+  }
+
+  :root[data-theme="light"] .theme-toggle-thumb {
+    transform: translateX(19px);
   }
 }
 
