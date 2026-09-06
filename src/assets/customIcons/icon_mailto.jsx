@@ -1,7 +1,7 @@
 const MailToCustomIcon = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    viewBox=" 0 32 32"
+    viewBox="0 0 32 32"
     fill="currentColor"
     {...props}
   >
@@ -17,14 +17,14 @@ const MailToCustomIcon = (props) => (
     <g
       id="Page-1"
       stroke="none"
-      stroke-width="1"
+      strokeWidth="1"
       fill="none"
-      fill-rule="evenodd"
+      fillRule="evenodd"
     >
       <g
         id="Dribbble-Light-Preview"
         transform="translate(-340.000000, -922.000000)"
-        fill="#ffffff"
+        fill="currentColor"
       >
         <g id="icons" transform="translate(56.000000, 160.000000)">
           <path

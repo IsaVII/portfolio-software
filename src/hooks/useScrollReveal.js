@@ -7,13 +7,11 @@ function useScrollReveal({
 } = {}) {
   const ref = useRef(null);
   const reducedMotion = useReducedMotion();
-  const [isVisible, setIsVisible] = useState(reducedMotion);
+  const [revealed, setRevealed] = useState(false);
+  const isVisible = revealed || reducedMotion;
 
   useEffect(() => {
-    if (reducedMotion) {
-      setIsVisible(true);
-      return;
-    }
+    if (reducedMotion) return;
 
     const node = ref.current;
     if (!node) return;
@@ -21,7 +19,7 @@ function useScrollReveal({
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setIsVisible(true);
+          setRevealed(true);
           observer.disconnect();
         }
       },

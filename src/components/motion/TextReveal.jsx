@@ -6,7 +6,7 @@ function TextReveal({ text, as: Tag = "h2", className = "", wordDelay = 40 }) {
 
   return (
     <Tag ref={ref} className={className} aria-label={text}>
-      <span aria-hidden="true" style={{ fontSize: "26px" }}>
+      <span aria-hidden="true" className="text-reveal-inner">
         {words.map((word, i) => (
           <span key={i} style={{ overflow: "hidden", display: "inline-block" }}>
             <span

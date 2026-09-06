@@ -1,22 +1,26 @@
 const ClockCustomIcon = (props) => (
   <svg
-    fill="#ffffff"
+    fill="none"
+    stroke="currentColor"
     width="24px"
     height="24px"
-    viewBox="0 0 32 32"
+    viewBox="0 0 192 192"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <g transform="translate(16 16)">
       <circle
         cx="80"
         cy="80"
         r="74"
-        style="fill:none;stroke:#000000;stroke-width:12;stroke-linejoin:round;stroke-opacity:1"
+        strokeWidth="12"
+        strokeLinejoin="round"
       />
-
       <path
         d="M80 30v50l40 32"
-        style="fill:none;stroke:#000000;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+        strokeWidth="12"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </g>
   </svg>

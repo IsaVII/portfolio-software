@@ -15,17 +15,27 @@ import "./css/reveal.css";
 
 function App() {
   useEffect(() => {
+    let container;
+    let cancelled = false;
+
     const initParticles = async () => {
       await loadSlim(tsParticles);
       await loadTwinkleUpdater(tsParticles);
 
-      await tsParticles.load({
+      container = await tsParticles.load({
         id: "tsparticles",
         options: particlesConfig,
       });
+
+      if (cancelled) container?.destroy();
     };
 
     initParticles();
+
+    return () => {
+      cancelled = true;
+      container?.destroy();
+    };
   }, []);
 
   return (

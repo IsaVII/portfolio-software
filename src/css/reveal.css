@@ -10,6 +10,10 @@
 }
 
 /* ---- Text reveal (per word/char, driven by <TextReveal>) ---- */
+.text-reveal-inner {
+    font-size: 26px;
+}
+
 .text-reveal-piece {
     display: inline-block;
     transform: translateY(110%);
