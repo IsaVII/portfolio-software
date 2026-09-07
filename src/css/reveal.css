@@ -12,6 +12,13 @@
 /* ---- Text reveal (per word/char, driven by <TextReveal>) ---- */
 .text-reveal-inner {
     font-size: 26px;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .text-reveal-inner {
+        font-size: 20px;
+    }
 }
 
 .text-reveal-piece {

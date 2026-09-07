@@ -66,6 +66,7 @@ html {
   scroll-padding-top: 6rem;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 
@@ -76,6 +77,8 @@ body {
   justify-self: center;
   margin: 0;
   padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -423,20 +426,32 @@ nav ul li a.nav-active {
     scroll-padding-top: 4rem;
   }
 
+  #center {
+    margin-top: 3.5rem;
+  }
+
   #header {
     height: 3.5rem;
-    padding: 0 0.5rem;
+    padding: 0 0.4rem;
+    gap: 0.25rem;
   }
 
   #contact {
     flex-direction: row;
-    padding: 0.3rem 0.5rem;
-    gap: 0.5rem;
-    width: 200px;
+    align-items: center;
+    padding: 0.3rem 0.25rem;
+    gap: 0.4rem;
+    width: auto;
+    min-width: 0;
+    flex-shrink: 1;
   }
 
   .contact-text {
-    width: 200px;
+    width: auto;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .contact-label {
@@ -444,12 +459,13 @@ nav ul li a.nav-active {
   }
 
   .contact-group {
-    grid-template-columns: 30px;
-    gap: 0;
+    grid-template-columns: 30px auto;
+    gap: 0.3rem;
   }
 
   .nav-hamburger {
     display: flex;
+    transform: none;
   }
 
   nav ul {
@@ -475,17 +491,31 @@ nav ul li a.nav-active {
     font-size: 1.1rem;
   }
 
-  #cv-button {
-    padding: 0.3rem 0.7rem;
-    margin: 0.4rem 0.3rem;
+  #cv-container {
+    flex-shrink: 0;
   }
 
-  #cv-button-text {
-    font-size: 0.85rem;
+  #cv-button,
+  #github-button {
+    padding: 0.4rem 0.5rem;
+    margin: 0 0.2rem;
+    gap: 0;
+  }
+
+  #cv-button .tool-icon,
+  #github-button .tool-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  #cv-button-text,
+  #github-button-text {
+    display: none;
   }
 
   #theme-toggle {
-    margin: 0 0.25rem;
+    margin: 0 0.2rem;
+    flex-shrink: 0;
   }
 
   .theme-toggle-track {
@@ -503,6 +533,16 @@ nav ul li a.nav-active {
   }
 }
 
+@media (max-width: 430px) {
+  .contact-text {
+    display: none;
+  }
+
+  .contact-group {
+    grid-template-columns: 30px;
+  }
+}
+
 
 
 
@@ -517,7 +557,7 @@ nav ul li a.nav-active {
   align-items: center;
   gap: 2rem;
   padding: 4rem;
-  width: calc(100vw - 8rem);
+  width: 100%;
 }
 
 
@@ -576,6 +616,8 @@ nav ul li a.nav-active {
   padding-top: 2rem;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
   align-items: flex-start;
 }
@@ -605,12 +647,33 @@ nav ul li a.nav-active {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .container-left {
     display: none;
   }
 
+  .experience-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem 1rem;
+    padding-top: 1.5rem;
+  }
 
+  .experience-item {
+    gap: 0.5rem;
+  }
+
+  .experience-description {
+    font-size: 0.9rem;
+  }
+
+  .container-right {
+    padding: 1.25rem 0.5rem;
+  }
+
+  .tab {
+    padding: 0.5rem 1rem;
+  }
 }
 
 
@@ -620,6 +683,7 @@ nav ul li a.nav-active {
 
 .tools-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 1.5rem;
 
@@ -629,6 +693,7 @@ nav ul li a.nav-active {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   gap: 0.1rem;
 }
 
@@ -666,14 +731,14 @@ nav ul li a.nav-active {
 @media (max-width: 1200px) {
 
   #center {
-    padding: 4rem 0;
+    padding: 4rem 1rem;
 
     width: 100%;
   }
 
   .section {
     margin-bottom: 0rem;
-    padding: 2rem 0;
+    padding: 2rem 1rem;
     border-radius: 0;
     width: 100%;
     min-width: unset;
@@ -684,12 +749,12 @@ nav ul li a.nav-active {
 
 @media (max-width: 870px) {
   #center {
-    padding: 4rem 0;
+    padding: 3.5rem 0.75rem;
   }
 
   .section {
     margin-bottom: 0rem;
-    padding: 2rem 0;
+    padding: 2rem 0.75rem;
     border-radius: 0;
     width: 100%;
     min-width: unset;
