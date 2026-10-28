@@ -22,7 +22,7 @@ export default function About() {
             </p>
             <br />
             <p className="section-content">
-              I've spent 8+ years developing games and game systems - as a solo
+              I've spent 5+ years developing games and game systems - as a solo
               developer and as a programmer/technical designer on production
               teams, including leading programming on a multiplayer co-op title.
               Now I'm applying that same problem-solving and systems thinking to

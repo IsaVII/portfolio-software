@@ -10,8 +10,10 @@ export default function Header() {
       <header>
         <Navbar />
       </header>
-      <ThemeToggle />
-      <CV />
+      <div id="header-actions">
+        <ThemeToggle />
+        <CV />
+      </div>
     </>
   );
 }
