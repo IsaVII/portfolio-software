@@ -35,7 +35,8 @@ export default function About() {
               <div className="experience-item">
                 <span className="experience-title sphere-shape">5+</span>
                 <p className="experience-description">
-                  Years of programming experience
+                  Years of
+                  <br /> programming experience
                 </p>
               </div>
 
@@ -47,7 +48,8 @@ export default function About() {
               <div className="experience-item">
                 <span className="experience-title sphere-shape">2</span>
                 <p className="experience-description">
-                  Game engines worked with
+                  Game engines
+                  <br /> worked with
                 </p>
               </div>
 
