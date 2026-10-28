@@ -6,7 +6,7 @@ export default function Contact() {
   return (
     <section id="contact">
       <a
-        href="https://linkedin.com/in/isa-hellström-229aa6187/"
+        href="https://linkedin.com/in/isa-hellstrom/"
         target="_blank"
         rel="noopener noreferrer"
       >
