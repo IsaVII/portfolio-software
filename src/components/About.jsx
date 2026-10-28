@@ -33,7 +33,7 @@ export default function About() {
 
             <div className="experience-wrapper">
               <div className="experience-item">
-                <span className="experience-title sphere-shape">8+</span>
+                <span className="experience-title sphere-shape">5+</span>
                 <p className="experience-description">
                   Years of programming experience
                 </p>
