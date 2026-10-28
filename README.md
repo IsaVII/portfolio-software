@@ -47,7 +47,7 @@ npm run build
 
 ## About me
 
-I spent 8+ years developing games and game systems, working as a programmer and technical designer on production teams, including leading programming on a multiplayer co-op title. I'm now applying that same problem-solving and systems thinking to web development.
+I spent 5+ years developing games and game systems, working as a programmer and technical designer on production teams, including leading programming on a multiplayer co-op title. I'm now applying that same problem-solving and systems thinking to web development.
 
-- LinkedIn: https://linkedin.com/in/isa-hellström-229aa6187/
+- LinkedIn: https://linkedin.com/in/isa-hellstrom/
 - Email: isahellstroem@gmail.com
